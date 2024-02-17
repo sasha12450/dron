@@ -1,0 +1,378 @@
+@font-face {
+    font-family: 'RF Rufo';
+    src: url('../fonts/RFRufoThin.eot');
+    src: url('../fonts/RFRufoThin.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/RFRufoThin.woff') format('woff'),
+         url('../fonts/RFRufoThin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+html{
+    scroll-behavior: smooth;
+    
+    font-family: 'RF Rufo';
+
+}
+body {
+    color: #FFF;
+    font-family: "RF Rufo";
+    margin: 0 auto;
+    text-align: center;
+    padding: 0;
+    background-color: black;
+    overflow-x: hidden;
+    
+}
+
+html, body {width:100%; }
+
+
+.container{
+    max-width: 1920px;
+    margin: 0 auto;
+}
+.header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #151515;
+    margin: 0 auto; /* Center the container */
+    
+}
+
+.logo-and-button, .navigation-list {
+    display: flex;
+    align-items: center;
+  }
+
+  .navigation_button{
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    margin-right: 10px;
+    text-align: center;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    background: none;
+    
+  }
+  .li_marker {
+    list-style: none;
+  }
+  .dropbtn {
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    background: none;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 100%; /* Помещаем список под кнопку */
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    opacity: 0.85;
+    text-align: left;
+    font-size: 20px;
+    background-color: rgba(30, 31, 32, 0.95);
+    opacity: 0.85;
+
+}
+
+.dropdown-content a {
+    background: rgba(30, 31, 32, 0.95);
+    color: #FFFFFF;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: flex; /* Используем flexbox для выравнивания элементов */
+    align-items: center; /* Выравниваем элементы по центру по вертикали */
+}
+
+.dropdown-content a img {
+    margin-right: 8px;
+    left: -24px;
+    position: absolute;
+
+}
+
+
+.dropdown-content a:hover {
+    background-color: #3a3b3d;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.list_content_name{
+    padding-left: 8px;
+}
+.line_social_media {
+    border-top: 1px solid white; /* замените "red" на любой другой цвет по вашему выбору */
+    margin-top: 10px; /* или другое значение, чтобы добавить отступ между элементами */
+    background-color: black; /* Устанавливаем прозрачный цвет для фона */
+    margin-top: 30px;
+}
+.social_media_whats{
+    display: flex;
+    justify-content: center;
+}
+.margin-left_150px {
+    margin-left: 150px;
+    margin-right: 150px;
+}
+.margin_button_navigation_glavn{
+    text-align: left;
+    margin-top: 40px;
+
+}
+.button_glavn{
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.button_etnomof{
+    text-decoration: none;
+    color: rgba(2, 229, 2, 1);
+    font-size: 24px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.text-container {
+    position: relative;
+    height: 200px;
+}
+
+/* Стили для первого текста (h1) */
+.text-container h1 {
+    position: absolute;
+    top: -60px;
+    left: 0px;
+    z-index: 2; /* Позиционирует текст поверх другого текста */
+    /* Дополнительные стили по вашему усмотрению */
+    color: rgba(255, 255, 255, 0.20);
+
+    font-family: "RF Rufo";
+    font-size: 120px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+/* Стили для второго текста (h3) */
+.text-container h3 {
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    z-index: 1; /* Позиционирует текст ниже другого текста */
+    /* Дополнительные стили по вашему усмотрению */
+    color: #02E502;
+    font-family: "RF Rufo";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 48px; /* 100% */
+}
+
+.content-container {
+    display: flex;
+    align-items: center; /* Выравниваем элементы по центру вертикально */
+}
+.width_text{
+    background-color: rgba(30, 29, 29, 1);
+
+}
+.text-box {
+    display: flex;
+    flex-grow: 1; /* Разрешаем блоку занимать доступное пространство */
+    padding: 20px; /* Добавляем внутренний отступ для контента */
+}
+.img_map{
+    width: 1505px;
+    height: 510px;
+}
+
+.width_text {
+    width: 100%; /* Занимаем всю доступную ширину */
+}
+
+.image-box {
+    margin-left: 20px;
+}
+.width_text h1{
+    font-size: 62px;
+    line-height: 62px;
+    text-align: left;
+    margin-left: 100px;
+}
+.text_adres_tl{
+    font-size: 18px;
+    line-height: 18px;
+    text-align: left;
+    margin-left: 100px;
+
+}
+.text_city{
+    font-size: 24px;
+    line-height: 24px;
+    text-align: left;
+    margin-left: 100px;
+
+}
+.img_drone_icon{
+    position: absolute;
+    margin-left: -700px;
+    margin-top: -35px;
+}
+.button_basket {
+    color: #02E502;
+    font-family: "RF Rufo";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    background-color: #1E1D1D;
+    border: 1px solid white;
+    width: 288px;
+    height: 62px;
+    margin-top: 80px;
+    transition: background-color 0.3s, color 0.3s; /* добавляем анимацию для плавного перехода */
+    display: inline-block; /* чтобы ссылка внутри кнопки не занимала всю ширину кнопки */
+    text-decoration: none; /* убираем подчеркивание у ссылки */
+}
+
+.button_basket:hover
+{ /* добавляем стили для ссылки внутри кнопки при наведении */
+    background-color: white; /* изменяем фон кнопки при наведении */
+    color: #1E1D1D; /* изменяем цвет текста при наведении */
+    border: black;
+}
+.button_basket:hover .backet {
+    color: black;
+}
+
+.backet {
+    color: white;
+    text-decoration: none;
+}
+
+.backet:hover {
+    color: #1E1D1D;
+}
+#backet_320px{
+    display: none;
+}
+
+
+.iconLine_img{
+    position: absolute;
+    z-index: -3;
+    height: 1014px;
+    pointer-events: none;
+    margin-top: -730px;
+}
+.img_map_320px{
+    display: none;
+}
+@media (max-width: 320px) {
+  
+    .li_marker{
+        display: none;
+    }
+    footer .li_marker{
+        display: inline-block;
+    }
+    
+    .header_des{
+        width: 428px;
+        height: 272px;
+    }
+    .iconLine_img{
+        display: none;
+    }
+
+    html{
+        width: 320px;
+    }
+    .container{
+        max-width: 320px;
+        text-align: center;
+        
+    }
+
+    .text-container h1{
+        font-size: 36px;
+    }
+    .text-container h3{
+        font-size: 22px;
+        top: 0px;
+    }
+    .text-container{
+        height: 50px;
+    }
+    .box_text{
+        width: 288px;
+        margin-right: 0px;
+    }
+    .margin-left_150px{
+        margin: 0px;
+    }
+
+
+    footer p{
+        display: none;
+    }
+    .number_telephone {
+        font-size: 0px;
+    }
+    .text-container h1{
+        top: -8px;
+    }
+    .text-box{
+        display: inline-block;
+    }
+    .img_map{
+        width: 320px;
+        height: 418px;
+    }
+    .text_city,.text_adres_tl,.width_text h1{
+        margin-left: 40px;
+    }
+    .img_drone_icon{
+        margin-top: -19px;
+    }
+    .width_text{
+        height: 497px;
+    }
+    .button_basket{
+        margin-top: 110px;
+    }
+    .text-box{
+        padding: 0px;
+    }
+    .img_map_320px{
+        margin-top: 10px;
+        display: inline-block;
+    }
+    .img_map{
+        display: none;
+    }
+    .margin_button_navigation_glavn, .text-container{
+        margin-left: 10px;
+    }
+    #backet_320px{
+        display: inline;
+    }
+}

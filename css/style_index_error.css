@@ -1,0 +1,143 @@
+@font-face {
+    font-family: 'RF Rufo';
+    src: url('../fonts/RFRufoThin.eot');
+    src: url('../fonts/RFRufoThin.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/RFRufoThin.woff') format('woff'),
+         url('../fonts/RFRufoThin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+html{
+    scroll-behavior: smooth;
+    
+    font-family: 'RF Rufo';
+
+}
+body {
+    color: #FFF;
+    font-family: "RF Rufo";
+    margin: 0 auto;
+    text-align: center;
+    padding: 0;
+    background-color: black;
+    overflow-x: hidden;
+    
+}
+
+
+.container{
+    max-width: 1920px;
+    margin: 0 auto;
+}
+.header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #151515;
+    margin: 0 auto; /* Center the container */
+}
+.logo-and-button, .navigation-list {
+    display: flex;
+    align-items: center;
+  }
+  .navigation_button{
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    margin-right: 10px;
+    text-align: center;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    background: none;
+    
+  }
+  .li_marker {
+    list-style: none;
+  }
+  .dropbtn {
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    background: none;
+  }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 100%; /* Помещаем список под кнопку */
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    opacity: 0.85;
+    text-align: left;
+    font-size: 20px;
+    background-color: rgba(30, 31, 32, 0.95);
+    opacity: 0.85;
+
+}
+
+.dropdown-content a {
+    background: rgba(30, 31, 32, 0.95);
+    color: #FFFFFF;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: flex; /* Используем flexbox для выравнивания элементов */
+    align-items: center; /* Выравниваем элементы по центру по вертикали */
+}
+
+.dropdown-content a img {
+    margin-right: 8px;
+    left: -24px;
+    position: absolute;
+
+}
+
+#backet_320px{
+  display: none;
+}
+.dropdown-content a:hover {
+    background-color: #3a3b3d;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.line_social_media {
+  border-top: 1px solid white; /* замените "red" на любой другой цвет по вашему выбору */
+  margin-top: 10px; /* или другое значение, чтобы добавить отступ между элементами */
+  background-color: black; /* Устанавливаем прозрачный цвет для фона */
+  margin-top: 30px;
+}
+.social_media_whats{
+  display: flex;
+  justify-content: center;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+@media (max-width: 320px) {
+  #backet_320px{
+      display: inline-block;
+  }
+  header .li_marker{
+    display: none;
+}
+.li_marker p{
+  font-size: 0px;
+}
+.number_telephone{
+  font-size: 0px;
+}
+}

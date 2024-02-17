@@ -1,0 +1,1057 @@
+@font-face {
+    font-family: 'RF Rufo';
+    src: url('../fonts/RFRufoThin.eot');
+    src: url('../fonts/RFRufoThin.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/RFRufoThin.woff') format('woff'),
+         url('../fonts/RFRufoThin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+html{
+    scroll-behavior: smooth;
+    
+    font-family: 'RF Rufo';
+
+}
+body {
+    color: #FFF;
+    font-family: "RF Rufo";
+    margin: 0 auto;
+    text-align: center;
+    padding: 0;
+    background-color: black;
+    overflow-x: hidden;
+    
+}
+
+.header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #151515;
+    margin: 0 auto; /* Center the container */
+}
+.logo-and-button, .navigation-list {
+    display: flex;
+    align-items: center;
+  }
+  
+.container{
+    max-width: 1920px;
+    margin: 0 auto;
+}
+.navigation_button{
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    margin-right: 10px;
+    text-align: center;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    background: none;
+    
+  }
+  .li_marker {
+    list-style: none;
+  }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 100%; /* Помещаем список под кнопку */
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    opacity: 0.85;
+    text-align: left;
+    font-size: 20px;
+    background-color: rgba(30, 31, 32, 0.95);
+    opacity: 0.85;
+
+}
+
+.dropdown-content a {
+    background: rgba(30, 31, 32, 0.95);
+    color: #FFFFFF;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: flex; /* Используем flexbox для выравнивания элементов */
+    align-items: center; /* Выравниваем элементы по центру по вертикали */
+}
+
+.dropdown-content a img {
+    margin-right: 8px;
+    left: -24px;
+    position: absolute;
+
+}
+
+
+.dropdown-content a:hover {
+    background-color: #3a3b3d;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+  .header_des {
+    height: 650px;
+    background-color: #151515;
+    background-image: url(../img_2/Vector.png), url(../img_2/bgBackground.jpg);
+    background-size: cover, cover;
+    background-position: center, center;
+    background-repeat: no-repeat, no-repeat;
+    margin: 0 auto; /* Center the container */
+}
+.img_plashka{
+    margin-top: 465px;
+    margin-left: 447px;
+}
+.iconArrow_left {
+    margin-top: 10px;
+    position: relative;
+    top: -60px;
+    left: -155px; /* Сдвигаем влево на 20 пикселей */
+
+  }
+.iconArrow_right{
+    margin-top: 10px;
+    position: relative;
+    top: -13px;
+    left: -103px; 
+}
+.pagination {
+    display: flex;
+    position: relative;
+
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    left: 130px;
+    transform: rotate(30deg) translateY(-93px);
+  }
+@keyframes glowing {
+0% {
+    box-shadow: 0 0 5px 2px #bbb, 0 0 10px 4px #bbb, 0 0 15px 6px #bbb;
+}
+50% {
+    box-shadow: 0 0 5px 2px #bbb, 0 0 10px 4px #bbb, 0 0 20px 8px #bbb;
+}
+100% {
+    box-shadow: 0 0 5px 2px #bbb, 0 0 10px 4px #bbb, 0 0 25px 10px #bbb;
+}
+}
+
+.dot {
+height: 7px;
+width: 7px;
+background-color: #bbb; /* Цвет неактивных точек */
+border-radius: 50%;
+margin: 0 5px;
+opacity: 0.5; /* Начальная непрозрачность */
+transition: opacity 0.5s ease-in-out; /* Плавный переход для эффекта затухания */
+z-index: 1; /* Задаем z-index для точек */
+}
+
+.dot.active {
+background-color: #fff; /* Цвет активной точки */
+opacity: 1; /* Полная непрозрачность для активной точки */
+animation: glowing 1.5s infinite; /* Применяем анимацию glowing */
+z-index: 2; /* Более высокий z-index для активной точки */
+}
+
+
+.dot.active {
+background-color: #fff; /* Цвет активной точки */
+opacity: 1; /* Полная непрозрачность для активной точки */
+animation: glowing 1.5s infinite; /* Применяем анимацию glowing */
+}
+.AgroScout_name_company {
+    text-align: justify;
+    position: absolute;
+    top: 100px;
+    margin-left: 275px;
+    width: 70%;
+    max-width: 630px; /* Set maximum width to 600px */
+    color: #FFF;
+    font-family: "RF Rufo";
+    line-height: normal;
+    color: #FFF;
+    font-family: "RF Rufo";
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 400;
+    margin-right: 10px;
+    }
+.AgroScout_des_company{
+    text-align: justify;
+    position: absolute;
+    top: 340px;
+    margin-left: 275px;
+    width: 70%;
+    max-width: 430px;
+    font-size: 24px;
+
+}
+  
+.dropbtn {
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    background: none;
+  }
+
+  .list_content_name{
+    padding-left: 8px;
+}
+.line_social_media {
+    border-top: 1px solid white; /* замените "red" на любой другой цвет по вашему выбору */
+    margin-top: 10px; /* или другое значение, чтобы добавить отступ между элементами */
+    background-color: black; /* Устанавливаем прозрачный цвет для фона */
+    margin-top: 30px;
+}
+#backet_320px{
+    display: none;
+}
+
+  .image-with-text {
+    display: inline-block; /* чтобы обернуть текст и изображение в один блок */
+}
+
+.image-with-text img {
+    vertical-align: middle;
+}
+
+.image-with-text span {
+    margin-left: 500px; /* регулирует расстояние между изображением и текстом */
+}
+.img_name{
+    margin-left: 12px;
+}
+.name_img_soy{
+    vertical-align: middle;
+}
+.img_iconBatterfly{
+    vertical-align: middle;
+    margin-right: 20px;
+}
+.text_img_iconBatterfly{
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 100%;
+    color: #fff;
+}
+.header_des_text {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 900px;
+    margin-top: -105px;
+    margin-left: 140px;
+    
+}
+.box_text img{
+    vertical-align: middle;
+    padding-right: 10px;
+
+}
+.column {
+    width: calc(33.33% - 20px); /* Ширина каждой колонки, с учетом пространства между ними */
+    margin-bottom: 20px; /* Пространство между строками */
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center; /* Центрируем текст */
+}
+
+.column span {
+    display: block; /* Помещаем текст на новую строку */
+    margin-top: 10px; /* Пространство между изображением и текстом */
+}
+
+.column img {
+    max-width: 100%;
+    height: auto;
+    display: inline-block; /* Размещаем изображения в одной строке с текстом */
+    margin-bottom: 10px; /* Пространство между изображением и текстом */
+}
+.margin-left_150px {
+    margin-left: 150px;
+    margin-right: 150px;
+}
+.button_etnomof{
+    text-decoration: none;
+    color: rgba(2, 229, 2, 1);
+    font-size: 24px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.button_glavn{
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.margin_button_navigation_glavn{
+    text-align: left;
+    margin-top: 70px;
+
+}
+
+
+.text-container {
+    position: relative;
+    height: 200px;
+}
+
+/* Стили для первого текста (h1) */
+.text-container h1 {
+    position: absolute;
+    top: -60px;
+    left: 0px;
+    z-index: 2; /* Позиционирует текст поверх другого текста */
+    /* Дополнительные стили по вашему усмотрению */
+    color: rgba(255, 255, 255, 0.20);
+
+    font-family: "RF Rufo";
+    font-size: 120px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+/* Стили для второго текста (h3) */
+.text-container h3 {
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    z-index: 1; /* Позиционирует текст ниже другого текста */
+    /* Дополнительные стили по вашему усмотрению */
+    color: #02E502;
+    font-family: "RF Rufo";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 48px; /* 100% */
+}
+.button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.my-line {
+    height: 2px;
+    width: 50%;
+    background: #8D8B8B;
+}
+
+.my-line-left {
+    margin-right: 10px; /* Расстояние между линией и кнопкой */
+}
+.my-line-right {
+    margin-left: 10px; /* Расстояние между линией и кнопкой */
+}
+.my-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: black;
+    color: white;
+    border: none;
+
+}
+.company_AGROSCOUT_des{
+    font-size: 18px;
+    width: 1085px;
+    text-align: left;
+}
+.div_description {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px   ;
+
+}
+.box_text {
+    width: 422px;
+    height: 258px;
+    flex-shrink: 0;
+    margin-right: 17px;
+    background: #1E1D1D;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1; /* Поднимаем блок с текстом выше */
+
+    overflow: hidden;
+}
+
+
+.box_text:hover::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.6); /* Тень при наведении */
+    transition: all 0.3s ease-in-out;
+}
+
+.h3_text_des {
+    color: #FFF;
+    font-family: "RF Rufo";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+    margin-left: 30px;
+    margin-top: 58px;
+
+}
+.description_text_left {
+    position: absolute;
+    left: -150px; /* Расстояние от левого края блока до текста */
+    top: 50%;
+    transform: translateY(-50%);
+    width: 120px; /* Ширина блока с текстом */
+    color: white;
+}
+.picture_text {
+    color: #FFF;
+    width: 359px;
+    height: 87px;
+    font-family: "RF Rufo";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 31px;
+    text-align: justify;
+    margin-left: 30px;
+}
+
+.custom-text {
+    position: absolute;
+    left: 20px; /* Позиция по горизонтали */
+    font-size: 16px; /* Размер шрифта */
+    color: white; /* Цвет текста */
+    transform: rotate(270deg); /* Поворот текста на 90 градусов */
+    transform-origin: left top;
+    top: 1800px;
+    margin-left: 150px;
+    font-size: 70px;
+    font-weight: 900;
+    color: rgba(70, 70, 70, 0.4);
+            
+}
+.header_des_text_problem{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 100px; width: 1200px; margin: 0px;
+}
+.img_name_problem{
+    display: inline-block; 
+    vertical-align: top; 
+    margin-right: 20px;
+    text-align: left;
+    font-size: 24px;
+}
+.iconDrone_flying{
+    position: absolute;
+
+    height: 120px;
+    width: 600px;
+    margin-left: -1000px;
+    margin-top: 200px;
+}
+
+.iconLine{
+    margin-top: -300px;
+    position: absolute;
+
+}
+
+.text_truxogramma{
+    width: 1043px;
+    font-size: 18px;
+    line-height: 31px;
+    text-align: left;
+
+}
+.container_text-block  {
+    position: relative;
+}
+
+.img_text {
+    position: relative; /* Добавляем позиционирование */
+    z-index: 2; /* Установим более высокий индекс слоя */
+    display: block;
+}
+
+.text-block {
+    position: absolute;
+    z-index: 0; /* Установим индекс слоя ниже, чем у изображения */
+    height: 610px;
+    width: 1050px;
+    background-color: rgba(30, 29, 29, 1);
+    padding: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.margin_block_text_truxogramma{
+    margin-top: 200px;
+}
+
+.text-block p{
+    margin-left: 350px;
+    margin-right: 70px;
+    margin-top: 80px;
+    font-family: var(--font-family);
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 172%;
+    color: #fff;
+    text-align: left;
+}
+.text-block span{
+    margin-left: 44px;
+
+}
+.custom-list{
+    list-style: none; /* Скрываем стандартные маркеры */
+    display: flex; /* Устанавливаем родительский элемент как flex-контейнер */
+    flex-wrap: wrap; /* Разрешаем перенос элементов списка на новую строку */
+    list-style-type: none; /* Убираем стандартные маркеры */
+    text-align: left;
+    margin-left: 385px;
+}
+.custom-list li {
+    flex-basis: calc(30% - 10px); /* Ширина каждого элемента списка (1/3 ширины родителя) */
+
+    position: relative; /* Позиционируем, чтобы создать контекст для псевдоэлемента */
+    padding-left: 10px;
+    margin-bottom: 10px; /* Пространство между элементами списка */
+  }
+  
+  .custom-list li::before {
+    content: ""; 
+    position: absolute; 
+    top: 50%; /* Перемещаем галочку к центру вертикально */
+    transform: translateY(-50%); /* Сдвигаем галочку вверх на половину ее высоты */
+    width: 20px; 
+    
+    height: 20px; 
+    background-image: url('../img_2/IconCheck.png'); 
+    background-size: contain;
+    vertical-align: middle;
+    margin-left: -32px;
+
+  }
+  
+
+
+.custom-text_truxogramma{
+    position: absolute;
+    right: 20px; /* Позиция по горизонтали */
+    font-size: 16px; /* Размер шрифта */
+    color: white; /* Цвет текста */
+    transform: rotate(90deg); /* Поворот текста на 90 градусов */
+    transform-origin: left top;
+    top: 150px;
+    margin-right: -160px;
+    font-size: 70px;
+    font-weight: 900;
+    color: rgba(70, 70, 70, 0.4);
+}
+
+.img_text_photo {
+    position: relative; /* Добавляем позиционирование */
+    z-index: 2; /* Установим более высокий индекс слоя */
+    display: block;
+    right: 0; /* Размещаем изображение справа */
+    transform: translate(150%, 0%); /* Делаем коррекцию для центрирования вертикально */
+}
+
+.p_text-block_photo
+    {
+        margin-left: 70px;
+    width: 620px;
+    margin-top: 80px;
+    font-family: var(--font-family);
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 172%;
+    color: #fff;
+    text-align: left;
+}
+.text-block_photo {
+    position: absolute;
+    z-index: 0;
+    height: 610px;
+    width: 1050px;
+    background-color: rgba(30, 29, 29, 1);
+    padding: 20px;
+    top: -20%;
+    left: 0; /* Используем left: 0 для зафиксирования левого края */
+    transform: translate(0%, 0%);
+}
+.container_work{
+    display: flex;
+
+
+}
+.image {
+    
+    margin-right: 20px; /* добавить отступ между изображением и текстом */
+}
+
+.image img {
+    
+    height: auto;
+}
+
+.text {
+    margin-top: -20px;
+    width: 170px;
+    text-align: left;
+    font-size: 22px;
+    line-height: 38px;
+    
+}
+.plashka_support{
+    background-color: rgba(30, 29, 29, 1);
+    width: 1230px;
+    height: 510px;
+    padding-left: 70px;
+    margin-top: 200px;
+}
+.form_support{
+    text-align: left;
+    line-height: 40px;
+    font-size: 24px;
+    width: 500px;
+}
+
+
+
+
+.input_support {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"] {
+    width: 200px;
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    border-bottom: 1px solid rgba(75, 74, 74, 1);
+    border-radius: 5px;
+    transition: border-color 0.3s ease-in-out;
+    background-color: rgba(30, 29, 29, 1);
+    position: relative;
+    color: white;
+    margin-right: 40px;
+}
+
+input[type="text"]:focus::after,
+input[type="number"]:focus::after,
+input[type="email"]:focus::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(to right, rgba(75, 74, 74, 1), white);
+    transition: width 0.3s ease;
+}
+
+
+.button_basket{
+    color: #02E502;
+
+    font-family: "RF Rufo";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    border: 1px solid #02E502;
+    background: none;
+    width: 196px;
+    height: 58px;
+}
+.picture_dron{
+    position: relative;
+    margin-top: -475px;
+    margin-left: 600px;
+}
+.iconLine_dron{
+    position: relative;
+    margin-top: -290px;
+    margin-left: 450px;
+    height: 600px;
+    pointer-events: none;
+
+}
+.social_media_whats{
+    display: flex;
+    justify-content: center;
+}
+#zlatoglazka{
+    margin-top: 100px;
+}
+
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%; /* Полная ширина на мобильных устройствах */
+    }
+}
+
+@media (min-width: 1921px) {
+    .custom-text {
+        display: none; /* Скрываем текст при ширине экрана больше 1920 пикселей */
+    }
+}
+
+@media (max-width: 1600px) {
+    .text-block{
+        transform: translate(-38%, -50%);
+    }
+    .img_name{
+        margin-left: -145px;
+    }
+
+}
+@media (max-width: 320px) {
+    #backet_320px{
+        display: inline-block;
+    }
+
+}
+@media (max-width: 320px) {
+    .dropdown-content{
+        height: 400px;
+    }
+    .text_truxogramma{
+        width: 290px;
+    }
+    .header_des_text_problem{
+        margin-top: 50px;
+    }
+    .column {
+        padding: 0px;
+    }
+    .img_name_problem{
+        width: 218px;
+        font-size: 18px;
+    }
+    .li_marker{
+        display: none;
+    }
+    footer .li_marker{
+        display: inline-block;
+    }
+    #backet_icon{
+        margin-left: 1px;
+    }
+    #block{
+        display: none;
+    }
+    .box__shop{
+        margin-right: 0px;
+    }
+    #text_news_id{
+        height: 130px;
+    }
+    #margin_news{
+        margin-left: 24px;
+    }
+    .news_social_media{
+        gap: 25px   ;
+        justify-content: left;
+
+    }
+    .news_social_media_description{
+        font-size: 14px;
+        width: 302px;
+        margin-left: 5px;
+    }
+    .read_text{
+        margin-left: 5px;
+    }
+    .name_halicopter{
+        font-size: 16px;
+        margin-left: 30px;
+        text-align: center;
+        max-width: 240px;
+    }
+    .news_social_media img{
+        max-height: 240px;
+        margin-right: 44px;
+        max-height: 221px;
+    }
+    .adaptation .margin-left_150px{
+        margin-left: 1px;
+    }
+    .fix_map{
+        width: 491px;
+        margin-left: 0px;
+    }
+    
+    .header_des_text{
+        margin-top: 85px;
+        transform: translateX(160px);
+    }
+
+    .header_des{
+        height: 272px;
+    }
+    .AgroScout_name_company{
+        margin-left: 15px;
+        font-size: 28px;
+        position: inherit;
+        margin-top: 0px;
+    }
+    .AgroScout_des_company{
+        margin-left: 15px;
+        font-size: 16px;
+        width: 50%;
+        top: 200px;
+    }
+   
+    html{
+        width: 320px;
+    }
+    .container{
+        max-width: 320px;
+        text-align: center;
+        
+    }
+    #plashka_block{
+        display: none;
+    }
+    .margin-left_150px{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .margin_button_navigation_glavn{
+        margin-top: 30px;
+    }
+    .button_glavn{
+        font-size: 24px;
+    }
+    .button_etnomof{
+        font-size: 24px;
+    }
+    .text-container h1{
+        font-size: 36px;
+        top: 0px;
+    }
+    .text-container h3{
+        font-size: 22px;
+        top: 8px;
+    }
+    .text-container{
+        height: 85px;
+    }
+    .box_text{
+        width: 288px;
+        height: 200px;
+
+    }
+    .box_text p{
+        width: 218px;
+        font-size: 16px;
+    }
+    .h3_text_des{
+        margin-top: 20px;
+    }
+    .iconLine{
+        display: none;
+    }
+    .iconDrone_flyin{
+        display: none;
+
+    }
+    .container{
+        max-width: 320px;
+    }
+    .company_AGROSCOUT_des{
+        width: 270px;
+        font-size: 16px;
+    }
+    .img_text{
+        width: 272px;
+        height: 205px;
+    }
+    .text-block{
+        width: 290px;
+        height: 758px;
+    }
+        
+    .custom-text, .custom-text_truxogramma{
+        display: none;
+    }
+    .text-block{
+        transform: translate(-50%, -50%);
+        margin-bottom: 50px;
+        margin-top: 50px;
+        width: 240px;
+    }
+    .text-block p{
+        font-size: 14px;
+        margin-left: 0px;
+        margin-top: 0px;
+        width: 202px;
+    }
+    .text_margin_block{
+        margin-top: 200px;
+    }
+    .img_text{
+        margin-top: 300px;
+        margin-bottom: 400px;
+    }
+    #margin_picture{
+        margin-right: 50px ;
+        width: 250px;
+        transform: translate(10%, -120%);
+    }
+    .text_img_iconBatterfly{
+        font-size: 18px;
+    }
+    .img_iconBatterfly{
+        width: 30px;
+        height: 30px;
+    }
+    .text-block span{
+        margin-left: 0px;
+        text-align: left;
+
+    }
+    .custom-list{
+        margin-left: 0px;
+    }
+    .custom-list li{
+        margin-right: 33px;
+    }
+    .img_text_photo{
+        width: 250px;
+        transform: translate(10%, -79%);
+    }
+    .text-block_photo{
+        transform: translate(-50%, -50%);
+        margin-bottom: 50px;
+        margin-top: 200px;
+        width: 240px;
+        margin-left: 150px;
+
+    }
+    #zlatoglazka{
+        margin-top: 270px;
+    }
+    .p_text-block_photo{
+        margin-top: 0px;
+        margin-left: 0px;
+        width: 202px;
+        font-size: 14px;
+    }
+    .text-block_2{
+        margin-top: 200px;
+    }
+    .blocked{
+        display: none;
+    }
+    .img_text{
+        transform: translate(5%, -120%);
+    }
+    #blocked_text_3{
+        margin-top: 200px;
+    }
+    .plashka_support{
+        width: auto;
+        height: 450px;
+    }
+    .picture_dron{
+        margin-top: -430px;
+        margin-left: 145px;
+
+    }
+    #img_dr{
+        height: 105px;
+        width: 158px;
+    }
+    .plashka_support{
+        padding-left: 20px;
+    }
+    .iconLine_dron{
+        width: 196px;
+        height: 161px;
+        margin-top: -100px;
+        margin-left: 125px;
+    }
+    .form_support{
+        width: 250px;
+        font-size: 18px;
+        line-height: 27px;
+    }
+    .button_basket{
+        margin-top: 25px;
+    }
+    .header_des_text_problem{
+        width: 320px;
+        display: inline;
+    }
+    #problem_ento{
+        display: none;
+    }
+    #margin_50px_block{
+        margin-top: 50px;
+    }
+    header .header_des_text{
+        display: none;
+    }
+    .margin-left_150px    .container{
+        overflow-x: hidden;
+    }
+    .form_margin_top_200{
+        margin-top: 0px;
+    }
+    .form_help_top_100px{
+        margin-top: 0px;
+    }
+    .number_telephone{
+        font-size: 0px;
+    }
+    .plashka_support{
+        margin-top: 0px;
+    }
+    .li_marker p{
+        display: none;
+    }
+}
+.form_margin_top_200{
+    margin-top: 200px;
+}
+.form_help_top_100px{
+    margin-top: 100px;
+}
+@media (max-width:1770px) {
+    .custom-text_truxogramma{
+        display: none;
+    }
+}

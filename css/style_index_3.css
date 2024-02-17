@@ -1,0 +1,538 @@
+@font-face {
+    font-family: 'RF Rufo';
+    src: url('../fonts/RFRufoThin.eot');
+    src: url('../fonts/RFRufoThin.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/RFRufoThin.woff') format('woff'),
+         url('../fonts/RFRufoThin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+html{
+    scroll-behavior: smooth;
+    
+    font-family: 'RF Rufo';
+
+}
+
+body {
+    color: #FFF;
+    font-family: "RF Rufo";
+    margin: 0 auto;
+    text-align: center;
+    padding: 0;
+    background-color: black;
+    overflow-x: hidden;
+    
+}
+
+.container{
+    max-width: 1920px;
+    margin: 0 auto;
+    
+}
+.header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #151515;
+    margin: 0 auto; /* Center the container */
+}
+.logo-and-button, .navigation-list {
+    display: flex;
+    align-items: center;
+  }
+  .navigation_button{
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    margin-right: 10px;
+    text-align: center;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    background: none;
+    
+  }
+  .li_marker {
+    list-style: none;
+  }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 100%; /* Помещаем список под кнопку */
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    opacity: 0.85;
+    text-align: left;
+    font-size: 20px;
+    background-color: rgba(30, 31, 32, 0.95);
+    opacity: 0.85;
+
+}
+
+.dropdown-content a {
+    background: rgba(30, 31, 32, 0.95);
+    color: #FFFFFF;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: flex; /* Используем flexbox для выравнивания элементов */
+    align-items: center; /* Выравниваем элементы по центру по вертикали */
+}
+
+.dropdown-content a img {
+    margin-right: 8px;
+    left: -24px;
+    position: absolute;
+
+}
+
+
+.dropdown-content a:hover {
+    background-color: #3a3b3d;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.list_content_name{
+    padding-left: 8px;
+}
+#backet_320px{
+    display: none;
+}
+
+  .button_glavn{
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.button_news{
+    text-decoration: none;
+    color: rgba(2, 229, 2, 1);
+    font-size: 24px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.margin_button_navigation_glavn{
+    text-align: left;
+    margin-top: 70px;
+
+}
+.margin-left_150px {
+    margin-left: 250px;
+    margin-right: 150px;
+}
+.text-container {
+    position: relative;
+    height: 200px;
+}
+
+/* Стили для первого текста (h1) */
+.text-container h1 {
+    position: absolute;
+    top: -60px;
+    left: 0px;
+    z-index: 2; /* Позиционирует текст поверх другого текста */
+    /* Дополнительные стили по вашему усмотрению */
+    color: rgba(255, 255, 255, 0.20);
+
+    font-family: "RF Rufo";
+    font-size: 120px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+/* Стили для второго текста (h3) */
+.text-container h3 {
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    z-index: 1; /* Позиционирует текст ниже другого текста */
+    /* Дополнительные стили по вашему усмотрению */
+    color: #02E502;
+    font-family: "RF Rufo";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 48px; /* 100% */
+}
+.read_text{
+    float: left;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    color: rgba(2, 229, 2, 1);
+}
+
+.read_text {
+	position: relative;
+	color: rgba(2, 229, 2, 1); /*задаём цвет ссылки*/
+	cursor: pointer;
+	line-height: 1; /*задаём высоту строки*/
+	text-decoration: none; /*убираем подчёркивание*/
+    
+
+}
+.read_text:after {
+	display: block;
+	position: absolute;
+	left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+	width: 0;/*задаём длинну линии до наведения курсора*/
+	height: 2px; /*задаём ширину линии*/
+	background-color: rgba(2, 229, 2, 1); /*задаём цвет линии*/
+	content: "";
+	transition: width 0.3s ease-out; /*задаём время анимации*/
+}
+
+.read_text:hover:after,
+.read_text:focus:after {
+	width: 28%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+}
+.news_block{
+    background-color: rgba(30, 29, 29, 1);
+}
+.news_block {
+    padding-left: 30px;
+    display: flex;
+    height: 400px;
+    margin-top: 50px;
+
+}
+
+.news_image {
+    max-width: 50%;
+    align-self: center; /* Чтобы картинка была по вертикали по центру блока */
+}
+
+.news_content {
+    text-align: left;
+    padding-left: 20px; /* Отступ слева от текста */
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Чтобы текст был по вертикали по центру блока */
+}
+.name_news{
+    font-size: 22px;
+}
+.des_news{
+    width: 500px;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 172%;
+    color: #fff;
+}
+.bottom_image {
+    width: 100%;
+    max-width: 422px;
+    height: auto;
+    z-index: -1; 
+    margin-top: -360px;
+    margin-left: 510px;
+    position: absolute;
+
+}
+.repeart_img{
+    margin-top: 200px;
+    margin-left: -800px;
+    position: absolute;
+    z-index: -1;
+    pointer-events: none;
+    max-width: 550px;
+}
+.custom-text {
+    position: absolute;
+    left: 20px; /* Позиция по горизонтали */
+    font-size: 16px; /* Размер шрифта */
+    color: white; /* Цвет текста */
+    transform: rotate(270deg); /* Поворот текста на 90 градусов */
+    transform-origin: left top;
+    top: 765px;
+    margin-left: 130px;
+    font-size: 70px;
+    font-weight: 900;
+    color: rgba(70, 70, 70, 0.4);
+            
+}
+.custom-text_new{
+    position: absolute;
+    right: -400px; /* Позиция по горизонтали */
+    font-size: 16px; /* Размер шрифта */
+    color: white; /* Цвет текста */
+    transform: rotate(90deg); /* Поворот текста на 90 градусов */
+    transform-origin: left top;
+    top: 1600px;
+    margin-right: 130px;
+    font-size: 70px;
+    font-weight: 900;
+    color: rgba(70, 70, 70, 0.4);
+    float: right;
+}
+.pagination {
+    margin-top: 50px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.page-number {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 0 5px;
+    background-color: black;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.page-number:hover {
+    color: rgba(2, 229, 2, 1);
+}
+.read{
+    text-decoration: none;
+    color: #02E502;
+}
+.dropbtn {
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    background: none;
+  }
+
+  .line_social_media {
+    border-top: 1px solid white; /* замените "red" на любой другой цвет по вашему выбору */
+    margin-top: 10px; /* или другое значение, чтобы добавить отступ между элементами */
+    background-color: black; /* Устанавливаем прозрачный цвет для фона */
+    margin-top: 30px;
+}
+.social_media_whats{
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 320px) {
+    #backet_320px{
+        display: inline-block;
+    }
+
+}
+
+@media (max-width: 320px) {
+    
+    
+    .container{
+        max-width: 320px;
+    }
+    .custom-text{
+        display: none;
+    }
+    .text_truxogramma{
+        width: 290px;
+    }
+    .header_des_text_problem{
+        margin-top: 50px;
+    }
+    .column {
+        padding: 0px;
+    }
+    .img_name_problem{
+        width: 218px;
+        font-size: 18px;
+    }
+    .li_marker{
+        display: none;
+    }
+    footer .li_marker{
+        display: inline-block;
+    }
+    #backet_icon{
+        margin-left: 1px;
+    }
+    #block{
+        display: none;
+    }
+    .box__shop{
+        margin-right: 0px;
+    }
+    #text_news_id{
+        height: 130px;
+    }
+    #margin_news{
+        margin-left: 24px;
+    }
+    .news_social_media{
+        gap: 25px   ;
+        justify-content: left;
+
+    }
+    .news_social_media_description{
+        font-size: 14px;
+        width: 302px;
+        margin-left: 5px;
+    }
+    .read_text{
+        margin-left: 5px;
+    }
+    .name_halicopter{
+        font-size: 16px;
+        margin-left: 30px;
+        text-align: center;
+        max-width: 240px;
+    }
+    .news_social_media img{
+        max-height: 240px;
+        margin-right: 44px;
+        max-height: 221px;
+    }
+    .adaptation .margin-left_150px{
+        margin-left: 1px;
+    }
+    .fix_map{
+        width: 491px;
+        margin-left: 0px;
+    }
+    
+    .header_des_text{
+        margin-top: 85px;
+        transform: translateX(160px);
+    }
+
+    .header_des{
+        width: 330px;
+        height: 272px;
+    }
+    .AgroScout_name_company{
+        margin-left: 15px;
+        font-size: 28px;
+    }
+    .AgroScout_des_company{
+        margin-left: 15px;
+        font-size: 16px;
+        width: 50%;
+        top: 200px;
+    }
+   
+    html{
+        width: 320px;
+    }
+    .container{
+        max-width: 320px;
+        text-align: center;
+        
+    }
+    #plashka_block{
+        display: none;
+    }
+    .margin-left_150px{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .des_news{
+        width: 268px;
+        font-size: 15px;
+    }
+    .news_block{
+        padding: 0px;
+        height: 438px;
+    }
+    .custom-text_new{
+        display: none;
+    }
+    .number_telephone {
+        font-size: 0px;
+    }
+    .li_marker{
+        display: none;
+    }
+    .li_marker p{
+        font-size: 0px;
+    }
+    .news_image{
+        width: 100%;
+        margin-top: 10px;
+    }
+    .name_news{
+        font-size: 18px;
+        width: 236px;
+    }
+    .margin_button_navigation_glavn{
+        margin-top: 30px;
+    }
+    .button_glavn{
+        font-size: 24px;
+    }
+    .button_etnomof{
+        font-size: 24px;
+    }
+    .text-container h1{
+        font-size: 36px;
+        top: 0px;
+    }
+    .text-container h3{
+        font-size: 22px;
+        top: 8px;
+    }
+    .text-container{
+        height: 85px;
+    }
+    .box_text{
+        width: 288px;
+        height: 200px;
+
+    }
+    .box_text p{
+        width: 218px;
+        font-size: 16px;
+    }
+    .h3_text_des{
+        margin-top: 20px;
+    }
+    .iconLine{
+        display: none;
+    }
+    .iconDrone_flyin{
+        display: none;
+
+    }
+    .bottom_image{
+        display: none;
+    }
+    .news_block{
+        display: inline-block;
+        width: 290px;
+    }
+    .navigation_button{
+
+    margin-right: 0px;}
+}
+@media (max-width: 1705px) {
+    .news_block{
+        width: auto;
+    }
+    .bottom_image{
+        display: none;
+    }
+
+}
+@media (min-width: 2000px) {
+    .custom-text{
+        display: none;
+    }
+    .custom-text_new{
+        display: none;
+    }
+}
